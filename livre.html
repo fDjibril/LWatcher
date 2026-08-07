@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addsstyle.css">
+    <title>LIVRE</title>
+</head>
+<body>
+    <div class="CA">
+        <div class="titlepart">
+            <button id="infoAnim">i</button>
+            <h2><span>LI</span>VRES</h2>
+        </div>
+        <div class="listesAnimes">
+            <button id="btnAffCardList" >AJOUTER UN LIVRE</button>
+            <div id="affcadreAnimes">
+                <div id="cadreAnimes">
+                    <button id="fermeCadreAnime"></button>
+                    <input type="file" id="fileAnimes" accept="image/*">
+                    <button id="btnAddImgAnime">Image du LIVRE</button>
+                    <input id="nameAnime" type="text" placeholder="nom d'anime...">
+                    <button id="ValidNameAnime">Valider</button>
+                </div>
+            </div>
+            <div id="galleriesAnimes"></div>
+        </div>
+    </div>
+
+    <img class="bouleDbs" src="./imgsLivre/plume.png" alt="stl">
+    <img class="chpLeffy" src="./imgsLivre/stylo.png" alt="plm">
+
+    <div class="ifom" id="ifom">
+        <button id="fermInfom"></button>
+        <div>
+            <h3>Information</h3>
+            <p>Dans cette partie de LWatcher, vous pouvez listez vos serie de LIVRES deja visionner.</p>
+        </div>
+    </div>
+
+</body>
+<script src="scriptLivres.js"></script>
+</html>

@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    font-family: "Orbitron", cursive;
+}
+body {
+    background: #1D293D;
+}
+
+.CA {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+}
+
+.titlepart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+#infoAnim {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #27272A;
+    color: #FFE2E2;
+    transition: .7s;
+}
+#infoAnim:hover {
+    transition: .7s;
+    background-color: #FFE2E2;
+    color: #27272A;
+}
+
+.titlepart h2 {
+    font-size: 30px;
+    cursor: default;
+    color: #FFE2E2;
+}
+.titlepart h2 span {
+    color: #E7180B;
+}
+
+/* animation objs */
+.bouleDbs {
+    width: 65px;
+    position: absolute;
+    left: 60%;
+    top: 9%;
+    animation: bdir 3s infinite alternate-reverse; 
+    transform: rotate(20deg);
+    z-index: 999;
+}
+.chpLeffy {
+    width: 107px;
+    position: absolute;
+    left: 35%;
+    top: 9%;
+    animation: bdir 3s infinite alternate-reverse;
+    z-index: 999;
+}
+@keyframes bdir {
+    0% {
+        transform: translateY(3px), rotate(20deg);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+/* fin animation objs */
+
+.listesAnimes {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 21px;
+}
+
+#btnAffCardList {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #E7180B;
+    color: #FFE2E2;
+    transition: 0.1s;
+    cursor: pointer;
+}
+#btnAffCardList:active {
+    transition: 0.2s;
+    transform: translateY(3px);
+}
+
+#galleriesAnimes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px;
+    width: 70%;
+    height: 500px;
+    border-radius: 11px;
+    padding: 21px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    overflow: scroll;
+    background-color: #1D293D;
+    box-shadow: 0px 2px 7px 0px #eff6ff78;
+}
+
+#affcadreAnimes {
+    display: none;
+}
+#cadreAnimes {
+    background-color: #f9f9f9;
+    width: 270px;
+    height: 220px;
+    border-radius: 11px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+#fileAnimes {
+    display: none;
+}
+#nameAnime {
+    width: 200px;
+    height: 30px;
+    border: 2.5px dashed;
+    outline: none;
+    text-align: center;
+}
+#ValidNameAnime {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #27272A;
+    color: #FFE2E2;
+    transition: 0.1s;
+    cursor: pointer;
+}
+#ValidNameAnime:active {
+    transition: 0.2s;
+    transform: translateY(2px);
+}
+#ValidNameAnime:hover {
+    background-color: #37BC7D;
+    color: #27272A;
+    transition: 0.3s;
+}
+
+#btnAddImgAnime {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #27272A;
+    color: #FFE2E2;
+    transition: 0.1s;
+    cursor: pointer;
+}
+#btnAddImgAnime:active {
+    transition: 0.2s;
+    transform: translateY(2px);
+}
+#btnAddImgAnime:hover {
+    background-color: #E7180B;
+    color: #FFE2E2;
+    transition: .4s;
+}
+
+#fermeCadreAnime {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #E7180B;
+    border: none;
+    cursor: pointer;
+    transition: .1s;
+}
+#fermeCadreAnime:active {
+    transition: .3s;
+    transform: translateY(2px);
+}
+
+/* carte de l'infom */
+.ifom {
+    display: none;
+    border: .7px solid #EFF6FF;
+    border-radius: 23px;
+    width: 210px;
+    padding: 10px;
+    color: white;
+    background-color: #27272A;
+    position: absolute;
+    margin-top: -30%;
+    left: 43%;
+}
+#fermInfom {
+    width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FF6467;
+    cursor: pointer;
+}
+
+
+.grandcadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px dashed #ccc;
+    overflow: hidden;
+    gap: 10px;
+}
+.btndletecadre {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E7180B;
+    cursor: pointer;
+    transition: .1s;
+}
+.btndletecadre:active {
+    transition: .3s;
+    transform: translateY(2px);
+}
+
+.completImgAnime {
+    padding: 20px;
+    width: 220px;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    /* border: 1px dashed blue; */
+    align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.completImgAnime h3 {
+    font-size: 21px;
+    text-align: center;
+    color: #E7180B;
+    cursor: default;
+    text-transform: capitalize;
+}
+.completImgAnime img {
+    width: 230px;
+    height: 350px;
+    border-radius: 21px;
+}
+
+/* respo */
+@media (max-width : 1250px) {
+    .bouleDbs {
+        display: none;
+    }
+    .chpLeffy {
+        display: none;
+    }
+
+
+}
+
+@media (min-width : 595px) and (max-width : 767px) {
+    .ifom {
+        display: none;
+        border: .7px solid #EFF6FF;
+        border-radius: 23px;
+        width: 210px;
+        padding: 10px;
+        color: white;
+        background-color: #27272A;
+        position: absolute;
+        margin-top: -65%;
+        left: 34%;
+    }
+}
+@media (min-width : 768px) and (max-width : 1000px)  {
+    .ifom {
+        display: none;
+        border: .7px solid #EFF6FF;
+        border-radius: 23px;
+        width: 210px;
+        padding: 10px;
+        color: white;
+        background-color: #27272A;
+        position: absolute;
+        margin-top: -48%;
+        left: 37%;
+    }
+}
+@media (min-width : 300px) and (max-width : 369px)  {
+    .ifom {
+        display: none;
+        border: .7px solid #EFF6FF;
+        border-radius: 23px;
+        width: 180px;
+        padding: 10px;
+        color: white;
+        background-color: #27272A;
+        position: absolute;
+        margin-top: -140%;
+        left: 19%;
+    }
+}
+@media (min-width : 370px) and (max-width : 514px)  {
+    .ifom {
+        display: none;
+        border: .7px solid #EFF6FF;
+        border-radius: 23px;
+        width: 180px;
+        padding: 10px;
+        color: white;
+        background-color: #27272A;
+        position: absolute;
+        margin-top: -100%;
+        left: 19%;
+    }
+}
+@media (min-width : 514px) and (max-width : 594px)  {
+    .ifom {
+        display: none;
+        border: .7px solid #EFF6FF;
+        border-radius: 23px;
+        width: 180px;
+        padding: 10px;
+        color: white;
+        background-color: #27272A;
+        position: absolute;
+        margin-top: -80%;
+        left: 33%;
+    }
+}

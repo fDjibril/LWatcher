@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 740px;
+    font-family: "Orbitron", cursive;
+    background: linear-gradient(#7981dd,#27272A);
+}
+
+
+.conatiner {
+    padding: 10px;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+#infosite {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #27272A;
+    color: #FFE2E2;
+    transition: .7s;
+}
+#bgColors {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: no-drop;
+    background-color: #FFE2E2;
+    color: #27272A;
+    font-weight: bold;
+    transition: .7s;
+}
+#infosite:hover {
+    transition: .7s;
+    background-color: #FFE2E2;
+    color: #27272A;
+}
+#bgColors:hover {
+    transition: .7s;
+    background-color: #68686b;
+    color: #27272A;
+}
+
+.headContainer h2  {
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+.headContainer h2 span {
+    color: #E7180B;
+}
+
+.sectionChoixCntainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.animeCard, .filmCard, .livreCard, .afterseen {
+    /* border: 2px solid red; */
+    width: 170px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    border-radius: 19px;
+    transition: .7s;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.animeCard p, .filmCard p, .livreCard p, .afterseen p {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    color: white;
+    /* color: transparent;
+    -webkit-text-stroke: .8px rgb(255, 255, 255); */
+
+}
+.animeCard {
+    background: url('anime.JPG');
+    background-size: cover;
+}
+.filmCard {
+    background: url('film3.JPG');
+    background-size: cover;
+}
+.livreCard {
+    background: url('livre2.JPG');
+    background-size: cover;
+}
+.afterseen {
+    background-color: #212121;
+}
+
+.animeCard:hover, .filmCard:hover, .livreCard:hover, .afterseen:hover {
+    transition: .5s;
+    transform: rotateZ(2deg);
+    filter: brightness(100%);
+} 
+
+/* carte de l'infom */
+.ifom {
+    border: .7px solid #EFF6FF;
+    border-radius: 23px;
+    width: 210px;
+    padding: 10px;
+    color: white;
+    background-color: #27272A;
+    position: absolute;
+    margin-top: 5%;
+    display: none;
+}
+#fermInfom {
+    width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FF6467;
+    cursor: pointer;
+}
